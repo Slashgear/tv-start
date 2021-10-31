@@ -91,7 +91,7 @@ console.log(
 		`The server has started on http://localhost:${port}!`,
 		'You can render a video by passing props as URL parameters.',
 		'',
-		'If you are running Hello World, try this:',
+		'If you are running Message World, try this:',
 		'',
 		`http://localhost:${port}?titleText=Hello,+World!&titleColor=red`,
 		'',

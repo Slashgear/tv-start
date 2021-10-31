@@ -6,8 +6,7 @@ import {BlackScreen} from './BlackScreen';
 export const RemotionVideo: React.FC = () => {
 	return (
 		<>
-			<Composition width={1920} height={1080} id="BlackScreen" component={BlackScreen} fps={30} durationInFrames={200}/>
-			<Composition width={1920} height={1080} id="Television" component={Television} fps={30} durationInFrames={200}/>
+			<Composition width={1920} height={1080} id="Television" component={Television} fps={30} durationInFrames={300}/>
 		</>
 	);
 };

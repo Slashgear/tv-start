@@ -1,15 +1,17 @@
-import {useCurrentFrame, spring, useVideoConfig, interpolate} from 'remotion';
+import {useCurrentFrame, spring, useVideoConfig, interpolate, Easing} from 'remotion';
 import {BlackScreen} from './BlackScreen';
 
 
 export const Flash: React.FC = () => {
 	const frame = useCurrentFrame();
 
-
 	const flash = interpolate(
 		frame,
 		[0, 10],
 		[10, 1080],
+		{
+			easing: Easing.cubic
+		}
 	);
 
 	const opacity = interpolate(

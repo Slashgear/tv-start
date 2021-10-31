@@ -1,4 +1,4 @@
-import {useCurrentFrame, spring, useVideoConfig, interpolate} from 'remotion';
+import {useCurrentFrame, spring, useVideoConfig, interpolate, Easing} from 'remotion';
 import {BlackScreen} from './BlackScreen';
 
 
@@ -11,6 +11,9 @@ export const Beam: React.FC = () => {
 		frame,
 		[0, 10],
 		[0, 1920],
+		{
+			easing: Easing.ease
+		}
 	);
 
 	const opacity = interpolate(
